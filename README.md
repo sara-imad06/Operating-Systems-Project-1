@@ -919,29 +919,6 @@ Join threads
 Stop Timer
 ```
 
----
-
-# Project Structure
-
-```text
-Operating-Systems-Project-1/
-│
-├── data/
-│   ├── xa.csv
-│   ├── xb.csv
-│   ├── xc.csv
-│   ├── ...
-│   └── xt.csv
-│
-├── naive.c
-├── multiprocessing.c
-├── multithreading.c
-├── speedup_comparison.png
-└── README.md
-```
-
----
-
 # Compilation
 
 ### Naive
