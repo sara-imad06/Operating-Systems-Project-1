@@ -27,9 +27,9 @@ After entering a search value, the program calculates:
 
 The same task is implemented using three different approaches:
 
-- Naive
-- Multiprocessing
-- Multithreading
+- **Naive**
+- **Multiprocessing**
+- **Multithreading**
 
 The purpose of the project is to compare sequential processing with process-based and thread-based parallel processing.
 
@@ -44,7 +44,7 @@ The purpose of the project is to compare sequential processing with process-base
 
 The program loads the 20 files and stores the records in memory before processing the search.
 
-The dataset loading time is not included in the reported processing time. Timing starts after the dataset has been loaded into memory.
+The dataset loading time is **not included** in the reported processing time. Timing starts after the dataset has been loaded into memory.
 
 ---
 
@@ -836,46 +836,11 @@ The following table shows the measured average processing time and speedup relat
 
 *Table 2: Average processing time and speedup relative to naive per configuration.*
 
-## Speedup Formula
-
-Speedup is calculated relative to the naive processing time:
-
-$$
-\text{Speedup} =
-\frac{\text{Naive Processing Time}}
-{\text{Parallel Processing Time}}
-$$
-
-For example, for 4 threads:
-
-$$
-\text{MT Speedup}
-=
-\frac{0.022814}{0.017232}
-\approx 1.32\times
-$$
-
-A speedup greater than `1.00x` means that the parallel configuration took less processing time than the naive baseline.
-
-A speedup below `1.00x` means that the parallel configuration took more processing time than the naive baseline.
-
 ---
 
 ## Speedup Graph
 
 The graph below compares multiprocessing and multithreading speedup across all tested configurations.
-
-Save the graph in the repository as:
-
-```text
-speedup_comparison.png
-```
-
-Then include it in the README:
-
-```markdown
-![Speedup Comparison](speedup_comparison.png)
-```
 
 ![Speedup Comparison](speedup_comparison.png)
 
